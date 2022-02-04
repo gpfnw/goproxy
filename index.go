@@ -155,7 +155,7 @@ func handler(rw http.ResponseWriter, req *http.Request) {
 			if u.Scheme == "" {
 				u.Scheme = "http"
 			}
-			u.Host = fmt.Sprintf("phuslu-%d.%s", time.Now().Nanosecond(), strings.Join(parts[1:], "."))
+			u.Host = fmt.Sprintf("gpfnw-%d.%s", time.Now().Nanosecond(), strings.Join(parts[1:], "."))
 			if resp, err := http.Get(u.String()); err == nil {
 				defer resp.Body.Close()
 				for key, values := range resp.Header {
