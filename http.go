@@ -10,8 +10,8 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/phuslu/glog"
-	"github.com/phuslu/goproxy/httpproxy/helpers"
+	"github.com/gpfnw/glog"
+	"github.com/gpfnw/goproxy/httpproxy/helpers"
 )
 
 type HTTPHandler struct {

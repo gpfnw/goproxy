@@ -10,7 +10,7 @@ import (
 	"strings"
 
 	"github.com/naoina/toml"
-	"github.com/phuslu/glog"
+	"github.com/gpfnw/glog"
 )
 
 type Config struct {

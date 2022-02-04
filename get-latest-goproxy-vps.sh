@@ -61,7 +61,7 @@ LOCALVERSION=$(./goproxy-vps -version 2>/dev/null || :)
 echo "0. Local Goproxy VPS version ${LOCALVERSION}"
 
 echo "1. Checking GoProxy VPS Version"
-curl -kL https://github.com/phuslu/goproxy-ci/commits/master >goproxy-ci.txt
+curl -kL https://github.com/gpfnw/goproxy-ci/commits/master >goproxy-ci.txt
 MAJORVERSION=$(cat goproxy-ci.txt | grep -oE "goproxy_linux_amd64-r[0-9]+.[0-9a-z\.]+" | head -1 | awk -F'.' '{print $1}' | awk -F'-' '{print $2}')
 FILENAME=$(cat goproxy-ci.txt | grep -oE "${FILENAME_PREFIX}-r[0-9]+.[0-9a-z\.]+" | head -1)
 REMOTEVERSION=$(echo ${FILENAME} | awk -F'.' '{print $1}' | awk -F'-' '{print $3}')
@@ -77,7 +77,7 @@ if [[ ${LOCALVERSION#r*} -ge ${REMOTEVERSION#r*} ]]; then
 fi
 
 echo "2. Downloading ${FILENAME}"
-curl -kL https://github.com/phuslu/goproxy-ci/releases/download/${MAJORVERSION}/${FILENAME} >${FILENAME}.tmp
+curl -kL https://github.com/gpfnw/goproxy-ci/releases/download/${MAJORVERSION}/${FILENAME} >${FILENAME}.tmp
 mv -f ${FILENAME}.tmp ${FILENAME}
 
 echo "3. Extracting ${FILENAME}"
