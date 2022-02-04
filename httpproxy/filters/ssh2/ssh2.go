@@ -8,7 +8,7 @@ import (
 	"time"
 
 	"github.com/cloudflare/golibs/lrucache"
-	"github.com/phuslu/glog"
+	"github.com/gpfnw/glog"
 	"golang.org/x/crypto/ssh"
 
 	"../../filters"

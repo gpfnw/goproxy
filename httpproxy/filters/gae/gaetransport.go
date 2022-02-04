@@ -10,9 +10,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/phuslu/glog"
-	quic "github.com/phuslu/quic-go"
-	"github.com/phuslu/quic-go/h2quic"
+	"github.com/gpfnw/glog"
+	quic "github.com/gpfnw/quic-go"
+	"github.com/gpfnw/quic-go/h2quic"
 
 	"../../helpers"
 )

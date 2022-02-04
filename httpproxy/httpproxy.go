@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/phuslu/glog"
+	"github.com/gpfnw/glog"
 
 	"./filters"
 	"./helpers"

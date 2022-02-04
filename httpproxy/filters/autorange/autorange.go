@@ -8,7 +8,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/phuslu/glog"
+	"github.com/gpfnw/glog"
 
 	"../../filters"
 	"../../helpers"

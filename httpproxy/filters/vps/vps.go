@@ -7,8 +7,8 @@ import (
 	"net/http"
 	"net/url"
 
-	"github.com/phuslu/glog"
-	"github.com/phuslu/net/http2"
+	"github.com/gpfnw/glog"
+	"github.com/gpfnw/net/http2"
 
 	"../../filters"
 	"../../helpers"

@@ -12,9 +12,9 @@ import (
 	"net/url"
 	"time"
 
-	"github.com/phuslu/glog"
-	quic "github.com/phuslu/quic-go"
-	"github.com/phuslu/quic-go/h2quic"
+	"github.com/gpfnw/glog"
+	quic "github.com/gpfnw/quic-go"
+	"github.com/gpfnw/quic-go/h2quic"
 )
 
 func QUIC(network, addr string, auth *Auth, forward Dialer, resolver Resolver) (Dialer, error) {

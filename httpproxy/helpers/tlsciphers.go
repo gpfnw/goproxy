@@ -56,7 +56,7 @@ func TLSCipher(name string) uint16 {
 		return tls.TLS_RSA_WITH_AES_256_GCM_SHA384
 	case "TLS_RSA_WITH_RC4_128_SHA":
 		return tls.TLS_RSA_WITH_RC4_128_SHA
-	//cipher suite added by phuslu
+	//cipher suite added by gpfnw
 	case "TLS_RSA_WITH_AES_256_CBC_SHA256":
 		return tls.TLS_RSA_WITH_AES_256_CBC_SHA256
 	}
@@ -115,7 +115,7 @@ func TLSCipherName(value uint16) string {
 		return "TLS_RSA_WITH_AES_256_GCM_SHA384"
 	case tls.TLS_RSA_WITH_RC4_128_SHA:
 		return "TLS_RSA_WITH_RC4_128_SHA"
-	//cipher suite added by phuslu
+	//cipher suite added by gpfnw
 	case tls.TLS_RSA_WITH_AES_256_CBC_SHA256:
 		return "TLS_RSA_WITH_AES_256_CBC_SHA256"
 	}
