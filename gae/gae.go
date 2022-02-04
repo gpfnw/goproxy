@@ -392,7 +392,7 @@ func root(rw http.ResponseWriter, r *http.Request) {
 
 	var latest string
 	t := &urlfetch.Transport{Context: c}
-	req, _ := http.NewRequest("GET", "https://github.com//goproxy/commits/server.gae/gae", nil)
+	req, _ := http.NewRequest("GET", "https://github.com/gpfnw/goproxy/commits/server.gae/gae", nil)
 	resp, err := t.RoundTrip(req)
 	if err != nil {
 		latest = err.Error()
